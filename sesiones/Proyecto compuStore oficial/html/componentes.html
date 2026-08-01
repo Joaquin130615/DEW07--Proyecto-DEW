@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos | ByteStore</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark menu-principal">
+        <div class="container">
+           <H1 id="titulo">COMPU-STORE</H1>
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contácto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+
+            <div>
+                <img onclick="mostrarcarrito(this)" class="carrito" src="../img/shop.png" alt="">
+                <p class="cantidad-productos">0</p>
+            </div>
+            <div class="productos-carrito" id="id-productos">
+                <p class="cerrar-btn" onclick="cerrarBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="articulos-tarjeta">
+                </div>
+                <h2>Total: S/.<strong class="precio-total">0</strong></h2>
+            </div>
+             
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Ruta de navegación -->
+    <section class="ruta">
+      <div class="container">
+        <p>Inicio <span>Productos</span></p>
+      </div>
+    </section>
+
+    <!-- Buscador y filtros visuales -->
+    <section class="filtros-productos">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-md-8">
+            <div class="buscador">
+              <i class="bi bi-search"></i>
+              <input type="text" placeholder="Buscar producto..." />
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <select class="form-select filtro-select">
+              <option>Categoría</option>
+              <option>Laptops</option>
+              <option>PCs</option>
+              <option>Componentes</option>
+              <option>Periféricos</option>
+            </select>
+          </div>
+
+          <div class="col-md-2">
+            <select class="form-select filtro-select">
+              <option>Precio</option>
+              <option>Menor precio</option>
+              <option>Mayor precio</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="categorias-productos">
+          <a href="productos.html">Todos</a>
+          <a href="laptops.html" >Laptops</a>
+          <a href="pcs.html">PCs</a>
+          <a href="componentes.html" class="activo">Componentes</a>
+          <a href="perifericos.html">Periféricos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo de productos -->
+    <section class="seccion">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="producto">
+              <div class="imagen-producto">
+                <div class="imagen-producto text-center">
+                  <img src="../img/c1.jpg" alt="Legion Pro 5" class="img-fluid w-50"/>
+                </div>
+              </div>
+              <h3 class="titulo">PROCESADOR INTEL CORE ULTRA 7 265K 3.90GHZ </h3>
+              <small>
+                FRECUENCIA BASE	:	3.90GHz <br>
+                FRECUENCIA MÁXIMA	:	5.50GHz  <br>
+                NÚCLEOS	:	20 <br>
+                SOCKET 	:	LGA1851
+              </small>
+              <p>S/ 1,699</p>
+              <a href="" target="_blank" class="btn btn-agregar-carrito">
+                <i class="bi bi-cart3"></i> Añadir
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="producto">
+              <div class="imagen-producto">
+                <img src="../img/c2.jpg" alt="Lenovo LOQ Tower" style="width: 55%"/>
+              </div>
+              <h3 class="titulo">CABLE DE EXTENSION LIAN LI STRIMER WIRELESS 24 PINES RGB</h3>
+              <small>
+                MATERIAL	:	Silicona / TPE <br>
+                LONGITUD	:	260mm  <br>
+                ILUMINACIÓN	:	RGB  <br>
+                DIMENSIONES	:	315×18.3x60mm
+              </small>
+              <p>S/599</p>
+              <a href="" target="_blank" class="btn btn-agregar-carrito">
+              <i class="bi bi-cart3"></i> Añadir
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="producto">
+              <div class="imagen-producto">
+                <img src="../img/c3.jpg" alt="Intel Core Ultra 7" style="width: 30%"/>
+              </div>
+              <h3 class="titulo">PROCESADOR AMD RYZEN 9 9950X 4.30GHZ</h3>
+              <small>
+                FRECUENCIA BASE	:	4.30GHz <br>
+                FRECUENCIA MÁXIMA	:	5.70GHz <br>
+                NÚCLEOS	:	16 <br>
+                SOCKET 	:	AM5
+              </small>
+              <p>S/ 1,399</p>
+              <a href="" target="_blank" class="btn btn-agregar-carrito">
+              <i class="bi bi-cart3"></i> Añadir
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="producto">
+              <div class="imagen-producto rosa-icono">
+                <img src="../img/c4.jpg" alt="G512 X 75" style="width: 60%"/>
+              </div>
+              <h3 class="titulo">PLACA ASROCK A620M-HDV/M.2 M.ATX DDR5 AMD AM5</h3>
+              <small>
+                SOCKET	:	AM5 Amd Ryzen Series 9000/8000/7000  <br>
+                MEMORIA	:	2x DIMM, Max.128GB,DDR5 6400+(OC) <br>
+                REDES	:	Gigabit LAN 10/100/1000 Mb/s <br>
+                AUDIO	:	Realtek® ALC897 Codec 
+      
+              </small>
+              <p>S/ 899</p>
+              <a href="" target="_blank" class="btn btn-agregar-carrito">
+              <i class="bi bi-cart3"></i> Añadir
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="producto">
+              <div class="imagen-producto">
+                <img src="../img/c5.jpg" alt="HP Smart Tank 750" style="width: 50%" />
+              </div>
+              <h3 class="titulo">FUENTE DE PODER MSI MAG A1000GLS PCIE5 1000W</h3>
+              <small>
+              EFICIENCIA	:	80 Plus Gold  <br>
+              WATTS	:	1000w <br>
+              RANGO ENTRADA	:	100-240V AC <br>
+              DIMENSIONES	:	150mm x 140mm x 86mm <br>
+              </small>
+              <p>S/ 449</p>
+              <a href="" target="_blank"class="btn btn-agregar-carrito">
+              <i class="bi bi-cart3"></i> Añadir
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="producto">
+              <div class="imagen-producto rosa-icono">
+                <img
+                  src="../img/c6.jpg"  alt="Monitor G Pro 27i" style="width: 50%"
+                />
+              </div>
+              <h3 class="titulo">PLACA ASUS ROG STRIX Z890-F GAMING </h3>
+              <small>
+              Intel Socket LGA1851 para procesadores Intel Core Ultra (serie 2) 
+              MEMORIA	:	4 x DIMM, Max. 192GB, DDR5 8600+MT/s (Oc)
+              REDES	:	Intel Wi-Fi 7/Bluetooth® v5.4
+              AUDIO	:	ROG SupremeFX 7.1 Surround Sound High Definition Audio
+              </small>
+              <p>S/ 1,299</p>
+              <a href="" target="_blank" class="btn btn-agregar-carrito">
+              <i class="bi bi-cart3"></i> Añadir
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="contenedor-whatsapp">
+        <a href="https://wa.me/51987654321" target="_blank">
+        <img src="../img/flotWhatsapp.jpg" alt="WhatsApp">
+         </a>
+    </div>
+
+
+    <!-- Pie de página -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-3">
+            <h4>CUMPU-STORE</h4>
+            <p>Tecnología confiable</p>
+            <p>Perú, Lima</p>
+          </div>
+
+          <div class="col-md-3">
+            <h4>Servicios</h4> 
+             <a href="servicios.html" style="color: #080914;" >Instalación</a><br>
+             <a href="servicios.html" style="color: #080914;" >Soporte</a><br>
+            <a href="servicios.html" style="color: #080914;" >Configuración</a><br>
+          </div>
+
+          <div class="col-md-3">
+            <h4>Productos</h4>
+            <a href="productos.html" style="color: #080914;" >Laptops</a><br>
+            <a href="productos.html" style="color: #080914;" >PCs</a><br>
+            <a href="productos.html" style="color: #080914;" >Periféricos</a><br>
+            
+          </div>
+
+          <div class="col-md-3">
+            <h4>Contacto</h4>
+            <p>WhatsApp: 999 998 888</p>
+            <p>Ubicación: Lima</p>
+            <p>Formulario web</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
