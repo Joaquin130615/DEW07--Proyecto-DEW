@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3 - Manejo de funciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Manejo de Funciones</h1>
+        <p>Ejemplo de la Clase 3 — Entornos Web</p>
+    </header>
+
+    <main>
+        <!-- 1. Función simple (sin argumentos) -->
+        <section>
+            <h2>1. Función simple</h2>
+            <button onclick="saludar()">Saludar</button>
+            <div id="out1" class="salida"></div>
+        </section>
+
+        <!-- 2. Función con argumentos -->
+        <section>
+            <h2>2. Función con argumentos</h2>
+            <button onclick="saludarA('Ana')">Saludar a Ana</button>
+            <button onclick="saludarA('Luis')">Saludar a Luis</button>
+            <div id="out2" class="salida"></div>
+        </section>
+
+        <!-- 3. Función con return -->
+        <section>
+            <h2>3. Función con return</h2>
+            <button onclick="mostrarSuma()">Sumar 7 + 5</button>
+            <button onclick="mostrarPromedio()">Promedio de notas</button>
+            <div id="out3" class="salida"></div>
+        </section>
+
+        <!-- 4. setTimeout -->
+        <section>
+            <h2>4. setTimeout (esperar)</h2>
+            <button onclick="mensajeConRetraso()">Mensaje en 3 segundos</button>
+            <div id="out4" class="salida"></div>
+        </section>
+
+        <!-- 5. setInterval -->
+        <section>
+            <h2>5. setInterval (repetir)</h2>
+            <button onclick="iniciarContador()">Iniciar contador</button>
+            <button onclick="detenerContador()">Detener</button>
+            <div id="out5" class="salida"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

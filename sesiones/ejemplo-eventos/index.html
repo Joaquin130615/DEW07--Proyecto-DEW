@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4 - Eventos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Eventos en JavaScript</h1>
+        <p>Ejemplo de la Clase 4 — Entornos Web</p>
+    </header>
+    <main>
+        <section>
+            <h2>1. click con onclick</h2>
+            <button onclick="saludar()">Haz clic</button>
+            <div id="out1" class="salida"></div>
+        </section>
+        <section>
+            <h2>2. addEventListener</h2>
+            <button id="btnListener">Presioname</button>
+            <div id="out2" class="salida"></div>
+        </section>
+        <section>
+            <h2>3. Teclado (keyup)</h2>
+            <input id="caja" type="text" placeholder="Escribe algo...">
+            <div id="out3" class="salida"></div>
+        </section>
+        <section>
+            <h2>4. Mouse (mouseover / mouseout)</h2>
+            <div id="zona" class="zona">Pasa el mouse por aqui</div>
+            <div id="out4" class="salida"></div>
+        </section>
+        <section>
+            <h2>5. El objeto event</h2>
+            <input id="caja2" type="text" placeholder="Mira la tecla que presionas...">
+            <div id="out5" class="salida"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
