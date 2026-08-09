@@ -1,0 +1,175 @@
+.hero-pagina { 
+  background-color: #191a30;          
+  color: #fff;                   
+  padding: 20px 20px;         
+  text-align: left;               
+}
+
+.hero-pagina h1 { 
+  font-size: 2.5rem;              
+  margin-top: 10px;               
+  text-align: left;              
+}
+
+.hero-pagina .etiqueta { 
+  display: inline-block;            
+  background-color: #191a30;      
+  color: #00d9ff;                 
+  font-weight: bold;           
+  padding: 6px 14px;             
+  border-radius: 20px;             
+  font-size: 0.9rem;             
+  text-align: left;                
+}
+
+
+/* ===== Contenedor general ===== */
+.contenedor { 
+  max-width: 1200px;         
+  margin: 0 auto;              
+  padding: 20px;              
+}
+
+.contenedor-contacto { 
+  display: flex;               
+  flex-wrap: wrap;         
+  gap: 20px;                 
+}
+
+/* ===== Sección contacto ===== */
+.contacto-seccion {
+  border-bottom: 1px solid #a9db1d; 
+  background-color: #0f1624;        
+  color: #fff;                    
+  padding: 40px 20px;               
+}
+
+.contacto-formulario { 
+  flex: 2;                         
+  padding: 35px;                 
+  border-right: 1px solid #083f5d;
+}
+
+.contacto-info { 
+  flex: 1;                       
+  padding: 35px;                
+}
+
+.contacto-formulario h2,
+.contacto-info h2 { 
+  font-size: 22px;               
+  font-weight: bold;             
+  margin-bottom: 25px;            
+}
+
+/* ===== Campos ===== */
+.campo { 
+  display: flex;                   
+  flex-direction: column;
+  margin-bottom: 15px;          
+}
+
+.contacto-formulario label { 
+  color: #a8a9c5;               
+  font-weight: bold;             
+  margin-bottom: 8px;               
+}
+
+.campo-contacto { 
+  background-color: #191a30;      
+  border: 1px solid #09547a;     
+  color: #ffffff;                
+  border-radius: 8px;              
+  padding: 10px;                 
+  transition: border 0.3s ease;     
+}
+
+.campo-contacto:focus { 
+  border-color: #00d9ff;            
+  outline: none;                    
+}
+
+.campo-contacto:hover { 
+  border: 2px solid #00d9ff;      
+}
+
+/* ===== Datos de contacto ===== */
+.dato-contacto { 
+  display: flex;                   
+  gap: 15px;                   
+  margin-bottom: 18px;          
+  align-items: center;            
+}
+
+.dato-contacto .icono { 
+  min-width: 50px;               
+  height: 50px;
+  font-size: 22px;                
+  display: flex;
+  justify-content: center;         
+  align-items: center;           
+}
+
+.dato-contacto h4 { 
+  font-size: 15px;                
+  color: #a8a9c5;                 
+  margin: 0;                      
+}
+
+.dato-contacto p { 
+  margin: 0;                        
+  font-weight: bold;             
+  color: #ffffff;                 
+}
+
+/* ===== Botón enviar ===== */
+.btn-enviar {
+  background-color: #007bff;        
+  color: #fff;                    
+  font-size: 1.1rem;                
+  font-weight: bold;            
+  padding: 12px;                  
+  border: none;                    
+  border-radius: 8px;              
+  transition: all 0.3s ease;      
+  cursor: pointer;                  
+  width: 100%;                    
+}
+
+.btn-enviar:hover { background-color: #0056b3; } 
+.btn-enviar:active { background-color: #004080; } 
+
+/* ===== Botón WhatsApp ===== */
+.btn-whatsapp {
+  display: block;                 
+  text-align: center;               
+  background-color: #25d366;       
+  color: #fff;                     
+  font-weight: bold;              
+  padding: 12px;                   
+  border-radius: 8px;               
+  text-decoration: none;            
+  transition: background 0.3s ease; 
+  margin-top: 20px;
+}
+
+.btn-whatsapp:hover { background-color: #1ebe5d; } 
+
+/* ===== Mapa ===== */
+.mapa-contacto {
+  height: 160px;                   
+  background-color: #191a30;       
+  border: 1px solid #09547a;     
+  border-radius: 15px;             
+  display: flex;
+  justify-content: center;         
+  align-items: center;              
+  overflow: hidden;               
+}
+
+.mapa-contacto iframe { 
+  width: 100%;                     
+  height: 100%;                  
+  border-radius: 15px;              
+  border: none;                     
+}
