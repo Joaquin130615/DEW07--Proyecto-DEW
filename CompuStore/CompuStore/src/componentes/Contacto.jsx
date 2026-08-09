@@ -82,7 +82,7 @@ function Contacto() {
               <div className="icono celeste"><i className="bi bi-geo-alt"></i></div>
               <div>
                 <h4>Dirección</h4>
-                <p>Jr. Alberto Barton 610, La Victoria 15034</p>
+                <p>Av. Garcilaso de la Vega 1337, Lima 15001, Perú</p>
               </div>
             </div>
 
@@ -114,7 +114,7 @@ function Contacto() {
 
             <div className="mapa-contacto">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18..."
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.132710472375!2d-77.03630641585565!3d-12.055420280639481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c92ed7b3a703%3A0x5de309fa60dfb879!2spc%20Factory%20Real%20Plaza%20Centro%20C%C3%ADvico!5e0!3m2!1ses-419!2sus!4v1786265159188!5m2!1ses-419!2sus"
                 allowFullScreen=""
                 loading="lazy"
               ></iframe>
