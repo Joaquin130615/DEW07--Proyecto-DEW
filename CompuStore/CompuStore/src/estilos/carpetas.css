@@ -173,3 +173,78 @@
   border-radius: 15px;              
   border: none;                     
 }
+
+.logo{
+  /* 1. Fuente y estilo de letra */
+  font-family: 'Electrolize', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  cursor: pointer;
+  user-select: none;
+
+  /* 2. Degradado de colores (Azul Cian, Neón Púrpura, Magenta, Azul) */
+  background: linear-gradient(
+    90deg, 
+    #00bcff, 
+    #7000ff, 
+    #ff007f, 
+    #00bcff
+  );
+  background-size: 300% 100%;
+
+  /* 3. Hace que el degradado se aplique solo al texto */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* 4. Animación suave y continua */
+  animation: animarColores 6s linear infinite;
+
+  /* 5. Efecto de brillo (Glow) opcional */
+  filter: drop-shadow(0 0 6px rgba(0, 188, 255, 0.4));
+  transition: transform 0.3s ease;
+}
+
+/* ===== RELOJ DIGITAL ===== */
+.reloj-box{
+  background-color: #1a2238; /* Fondo oscuro acorde al diseño */
+  color: #00bcff;           /* Color azul cian */
+  border: 1px solid #00bcff;
+  font-family: 'Courier New', Courier, monospace; /* Estilo digital */
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  box-shadow: 0 0 8px rgba(0, 188, 255, 0.2);
+}
+
+.footer {
+  width: 100%;
+  padding: 60px;
+  background-color: #f6f7fa; /* O el color de fondo que prefieras */
+  display: flex;
+  justify-content: center;   /* Centra horizontalmente */
+  align-items: center;       /* Centra verticalmente */
+}
+
+/* Aplica Flexbox al div que contiene el texto */
+.footer > div {
+  display: flex;
+  flex-direction: row;        /* Pone los elementos en una sola línea */
+  align-items: center;
+  gap: 25px;                 /* Espacio amplio y limpio entre elementos */
+}
+
+.footer h3 {
+  margin: 0;
+  color: #00bcff;            /* Azul cian de COMPU-STORE */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer p {
+  margin: 0;
+  color: #0c0101;            /* O #333333 si tu fondo es blanco */
+  font-size: 16px;
+}

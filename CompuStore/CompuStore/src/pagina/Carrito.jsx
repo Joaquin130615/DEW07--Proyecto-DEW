@@ -85,6 +85,7 @@ function Carrito() {
           </h2>
 
         </>
+        
 
       )}
 

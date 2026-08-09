@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { CarritoContext } from "../context/CarritoContext";
+import { Reloj } from './Reloj'; // Importas el reloj
 
 
 
@@ -21,6 +22,8 @@ function Menu() {
         <img src="img/shop.png" alt="Carrito" />
          <span>{cantidad}</span>
         </NavLink>
+       
+        <Reloj />
       </nav>
 
 
