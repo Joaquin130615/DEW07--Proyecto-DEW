@@ -207,8 +207,8 @@
 
 /* ===== RELOJ DIGITAL ===== */
 .reloj-box{
-  background-color: #1a2238; /* Fondo oscuro acorde al diseño */
-  color: #00bcff;           /* Color azul cian */
+  background-color: #ffffff; /* Fondo oscuro acorde al diseño */
+  color: #010b0f;           /* Color azul cian */
   border: 1px solid #00bcff;
   font-family: 'Courier New', Courier, monospace; /* Estilo digital */
   font-size: 15px;
@@ -250,7 +250,7 @@
 }
 
 body{
-  background: #000046;  /* fallback for old browsers */
+  background: #000046;  /* Degradado color Canela y Menta */
   background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
