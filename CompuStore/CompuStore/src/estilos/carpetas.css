@@ -177,7 +177,7 @@
 .logo{
   /* 1. Fuente y estilo de letra */
   font-family: 'Electrolize', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 900;
   letter-spacing: 5px;
   cursor: pointer;
@@ -211,11 +211,11 @@
   color: #00bcff;           /* Color azul cian */
   border: 1px solid #00bcff;
   font-family: 'Courier New', Courier, monospace; /* Estilo digital */
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
-  padding: 6px 12px;
+  padding: 6px 30px;
   border-radius: 6px;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   box-shadow: 0 0 8px rgba(0, 188, 255, 0.2);
 }
 
@@ -247,4 +247,11 @@
   margin: 0;
   color: #0c0101;            /* O #333333 si tu fondo es blanco */
   font-size: 16px;
+}
+
+body{
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
