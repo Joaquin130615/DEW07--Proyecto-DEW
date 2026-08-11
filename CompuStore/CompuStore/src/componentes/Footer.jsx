@@ -7,7 +7,7 @@ function Footer() {
         <p>Tecnología confiable</p>
         <p>Perú, Lima</p>
       </div>
-      
+   
     </footer>
   );
 }

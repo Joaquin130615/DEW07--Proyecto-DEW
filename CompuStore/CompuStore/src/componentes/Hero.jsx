@@ -1,15 +1,18 @@
+import { useNavigate } from "react-router-dom";
 function Hero() {
+
+    const navigate = useNavigate(); 
+
   return (
+
     <section className="hero">
-
       <div className="hero-texto">
-
         <span className="etiqueta">Tecnología de vanguardia</span>
 
         <h1>Tu aliado en <span>tecnología</span>
           <br />y sistemas inteligentes
         </h1>
-
+        
         <p>
           Tecnología para trabajo y entretenimiento.
           Sistemas empresariales, software,
@@ -17,7 +20,9 @@ function Hero() {
         </p>
 
         <div className="botones">
-          <button>Ver productos</button>
+          <button onClick={() => navigate("/productos")} className="btn-productos">
+        Ver productos
+      </button>
         </div>
       </div>
 

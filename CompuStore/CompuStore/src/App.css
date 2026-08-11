@@ -275,3 +275,25 @@ background:#00c8ff;
 color:white;
 
 }
+
+
+.contenedor-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.contenedor-whatsapp img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.hora-texto {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-top: 4px;
+}
