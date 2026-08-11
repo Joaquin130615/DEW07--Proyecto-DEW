@@ -5,8 +5,13 @@ import ProductoCard from "../componentes/ProductosCard";
 function Productos() {
   return (
     <div className="pagina-productos">
-      <h1>Conoce nuestra variedad de productos que contamos para ti</h1>
-
+       <h1 className="logo">! DESCUBRE LA TECNOLOGÍA 
+        QUE IMPULSA TU MUNDO !</h1>
+<section className="hero">
+  <span className="etiqueta">
+                      CONOCE NUESTRA VARIEDAD DE PRODUCTOS QUE CONTAMOS PARA TI </span>
+</section>
+      
       <div className="contenedor-productos">
        
         {productos && productos.map((producto) => (
