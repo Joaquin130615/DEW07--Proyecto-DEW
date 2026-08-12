@@ -15,7 +15,7 @@ export function Reloj() {
 
   return (
     <div className="reloj-box">
-      {tiempo.toLocaleTimeString('es-PE', { hour12: true })}
+      {tiempo.toLocaleTimeString('es-PE', { hour12: false })}
     </div>
   );
 }

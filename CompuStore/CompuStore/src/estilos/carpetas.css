@@ -205,6 +205,25 @@
   transition: transform 0.3s ease;
 }
 
+/* Efecto al pasar el cursor sobre el título */
+.logo-titulo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 12px rgba(0, 188, 255, 0.8));
+}
+
+/* Keyframes para hacer mover el degradado */
+@keyframes animarColores {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* ===== RELOJ DIGITAL ===== */
 .reloj-box{
   background-color: #ffffff; /* Fondo oscuro acorde al diseño */
